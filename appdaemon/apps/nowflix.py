@@ -24,7 +24,6 @@ class NowFlix(hass.Hass):
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument("--user-data-dir=chrome-data")
         chrome_options.add_argument("user-data-dir=chrome-data")
-        chrome_options.add_argument(r'--profile-directory=/Users/michaelvinci/Library/Application Support/Google/Chrome/Default')
         browser = webdriver.Chrome('chromedriver', options=chrome_options)
 
         USERNAME = "CHANGE_ME"
@@ -66,7 +65,7 @@ class NowFlix(hass.Hass):
                 self.log("Couldn't find title, ending scrape.")
                 self.call_service('switch/turn_off', entity_id='switch.appdaemon_run')
             browser.refresh()
-            
+
             # time.sleep(30)
             current_state = self.get_state("switch.appdaemon_run")
         else:
