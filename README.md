@@ -21,7 +21,7 @@ The way it the apps works is that it uses selenium to scrape https://netflix.com
 
 <b>AppDaemon log</b>
 
-![example of running log](./img/log.png)
+![example of running log](./img/log.gif)
 *When switch is on, the while:loop runs continually*
 
 The way I use it is: When SHIELD app_name = Netflix, turn switch.appdaemon_run on. I'm using Node-Red + sensor.netflix_now_playing to watch for changes, and then it turns the switch off, thus stopping the scraping since I obviously started a new media file.
