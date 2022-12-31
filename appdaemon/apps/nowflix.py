@@ -66,6 +66,8 @@ class NowFlix(hass.Hass):
                 self.log("Couldn't find title, ending scrape.")
                 self.call_service('switch/turn_off', entity_id='switch.appdaemon_run')
             browser.refresh()
+            
+            # time.sleep(30)
             current_state = self.get_state("switch.appdaemon_run")
         else:
             self.log("Turned off.")
