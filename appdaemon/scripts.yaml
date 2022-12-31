@@ -1,0 +1,7 @@
+app_daemon_event:
+  alias: app_daemon_event
+  sequence:
+    - event: nowflix
+      event_data:
+        entity_id: "{{entity_id}}"
+        payload: "{{payload}}"

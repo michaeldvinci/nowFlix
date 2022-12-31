@@ -1,0 +1,6 @@
+---
+netflix_current:
+  module: nowflix
+  class: NowFlix
+  interval: 1
+

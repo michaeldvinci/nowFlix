@@ -1,0 +1,14 @@
+- platform: template
+  switches:
+    appdaemon_run:
+      turn_on:
+        service: script.app_daemon_event
+        data:
+          entity_id: switch.appdaemon_run
+          payload: "on"
+      turn_off:
+        service: script.app_daemon_event
+        data:
+          entity_id: switch.appdaemon_run
+          payload: "off"
+
