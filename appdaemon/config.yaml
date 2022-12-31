@@ -1,0 +1,7 @@
+init_commands: []
+python_packages:
+  - selenium
+  - datetime
+system_packages:
+  - chromium-chromedriver
+  - chromium
